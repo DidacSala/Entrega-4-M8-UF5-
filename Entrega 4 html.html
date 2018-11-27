@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="Es">
+<!--Inici del Document-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Entrega 3-M8-UF5</title>
+    <meta name="author" content="Didac Sala">
+    <meta name="descriptiom" content="Practica 3 fet per Didac Sala">
+    <meta name="keywords" content="M8,UF5,HTML">
+</head>
+
+<body>
+    <h1 align="center">Registre d'Alumne SMX2</h1>
+    <form action="mailto:didacsala33@gmail.com?Subject=Entrega4-m8-uf5" enctype="text/plain" method="POST">
+        <!--Funcio dels botons-->
+        <table border="0" align="center" cellspacing="5">
+            <tr>
+                <th align="left"><label for="id-Nom">Nom:</label>
+                </th>
+                <td><input id="id-Nom" type="text" name="name" placeholder="Escriu el teu nom" size="60" maxlength="20"
+                        title="Este es un campo necesario" required autofocus> </td>
+            </tr>
+            <tr>
+                <th align="left"><label for="id-Cognoms">Cognoms:</label>
+                </th>
+                <td><input id="id-Cognoms" type="text" name="cognoms" placeholder="Escriu el teu cognoms" size="60"
+                        maxlength="20" required> </td>
+            </tr>
+            <tr>
+                <th align="left"><label for="id-email">E-mail:</label>
+                </th>
+                <td><input id="id-email" type="email" name="email" placeholder="Escriu el teu email" size="60"
+                        maxlength="20" required> </td>
+            </tr>
+            <tr>
+                <th align="left"><label for="id-data">Data de Naixament:</label>
+                </th>
+                <td><input id="id-data" type="date" name="datanaixament" value="1999-01-01"></td>
+            </tr>
+            <tr>
+                <th align="left"><label for="id-color">Color Preferit:</label>
+                </th>
+                <td><input id="id-color" type="color" name="colorfavorit" value="#FD0000"></td>
+            </tr>
+            <!--Moduls preferits SMX2-->
+            <tr>
+                <th align="left" rowspan="6"><label>Mòduls Preferits de SMX2:</label> </th>
+                <td>
+                    <input id="id-M4" type="checkbox" name="m4">
+                    <label for="id-M4">M4 - Sistemas Operatius en Xarxa</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="id-M6" type="checkbox" name="m6">
+                    <label for="id-M6">M6 - Seguretat Informatica</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="id-M7" type="checkbox" name="m7">
+                    <label for="id-M7">M7 - Serveis en Xarxa</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="id-M8" type="checkbox" name="m8" checked>
+                    <label for="id-M8">M8 - Aplicacions Web</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="id-M10" type="checkbox" name="m10">
+                    <label for="id-M10">M10 - Empresa i Iniciativa Emprenadora</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="id-M11" type="checkbox" name="m11">
+                    <label for="id-M11">M11 - Anlgès Tècnic</label>
+                </td>
+            </tr>
+            <!--Acabar el SMX-->
+            <tr>
+                <th align="left" rowspan="6"><label>Què voldries fer després d'acabar SMX?</label> </th>
+                <td><input id="id-DAM" type="radio" name="smx">
+                    <label for="id-DAM">DAM</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input id="id-ASIX" type="radio" name="smx" checked>
+                    <label for="id-ASIX">ASIX</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input id="id-Engin" type="radio" name="smx">
+                    <label for="id-Engin">Enginyeria Informàtica</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input id="id-TREBALL" type="radio" name="smx">
+                    <label for="id-TREBALL">Treballar</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input id="id-RES" type="radio" name="smx">
+                    <label for="id-RES">Res</label>
+                </td>
+            </tr>
+            <tr></tr>
+            <!--Acabar llenguatge html-->
+            <tr>
+                <th align="left"><label for="id-HTML">Que t'estan semblant el llenguatge HTML?</label></th>
+                <td><select id="id-HTML" name="HTML">
+                        <option value="agradatmolt">M'ha agradat molt</option>
+                        <option value="agradat" selected>M'ha agradat</option>
+                        <option value="nifunifa">Ni fu ni fa</option>
+                        <option value="noagradat">No m'ha agrdat gaire</option>
+                        <option value="noagradatgens">No m'ha agrdat gens</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="left"><label for="id-nota">Nota que esperes d'aquesta entrega</label> </th>
+                <td>
+                    <input id="id-nota" name="nota" type="number" min="0" max="10" value="5">
+                </td>
+            </tr>
+            <tr>
+                <th align="left"><label for="id-pass">Escriu un password per xifrar l'entrega</label> </th>
+                <td>
+                    <input id="id-pass" type="password" name="pass" placeholder="Escriu un pass" size="10" maxlength="10">
+                </td>
+            </tr>
+            <!--Botons-->
+            <tr>
+                <th colspan="2">
+                    <input id="idbotoenviar" name="enviar" type="submit" value="Enviar Respostes!">
+                    <input id="idbotoborrar" name="borrar" type="reset" value="Netejar Formulari!">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
+<!--Fet per Didac Sala-->
